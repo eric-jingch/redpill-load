@@ -1,6 +1,6 @@
 {
   "id": "pocopico-dtb",
-  "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-dtb/rpext-index.json",
+  "url": "https://github.com/PeterSuh-Q3/redpill-load/raw/develop/redpill-dtb/rpext-index.json",
   "info": {
     "name": "Device tree binary",
     "description": "Create your own device tree binary",
