@@ -5,9 +5,11 @@ tar -zxvf patch.tar.gz
 chmod +x dtc
 cp dtc /usr/sbin/dtc
 
-# download 6 ports dtb file for ds920p
-if [ "${PLATFORM_ID}" = "geminilake" ]; then
-  curl --location "https://raw.githubusercontent.com/PeterSuh-Q3/tinycore-redpill/main/model.dtb" --output /etc.defaults/model.dtb
+# copy 6 ports dtb file for ds920p
+#echo $PLATFORM_ID
+if [ "${PLATFORM_ID}" = "ds920p_42218" ]; then
+  echo "copy ds920 6 ports model.dtb to /etc.defaults"
+  cp -vf model.dtb /etc.defaults/model.dtb
 fi  
 
 # copy file
