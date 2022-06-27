@@ -173,7 +173,7 @@ if [[ "${BRP_DEV_DISABLE_EXTS}" -ne 1 ]]; then
 
   if [[ -z "${RPT_BUILD_EXTS}" ]]; then
     pr_dbg "Updating & downloading all extensions for %s" "${BRP_REL_OS_ID}"
-    ( ./ext-manager.sh _update_platform_exts "ds1621p_42218")
+    ( ./ext-manager.sh _update_platform_exts "${BRP_REL_OS_ID}")
     if [[ $? -ne 0 ]]; then
       pr_crit "Failed to update all extensions for %s platform - see errors above" "${BRP_REL_OS_ID}"
     fi
