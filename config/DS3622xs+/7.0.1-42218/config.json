@@ -1,26 +1,28 @@
 {
   "os": {
-    "id": "ds2422p_42218",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS2422%2B_42218.pat",
-    "sha256": "415c54934d483a2557500bc3a2e74588a0cec1266e1f0d9a82a7d3aace002471"
+    "id": "ds3622xsp_42218",
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS3622xs%2B_42218.pat",
+    "sha256": "f38329b8cdc5824a8f01fb1e377d3b1b6bd23da365142a01e2158beff5b8a424"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "38281a90036fffcb41cd17f05a6c7e9a1d5740a78c135980fb0c3a6d0ca1485f"
+      "sha256": "06964b68e5ccdedd4363dff3986f99686d3c9cb5225e8e4c3d840a1d9cd1330b"
     },
     "ramdisk": {
       "name": "rd.gz",
-      "sha256": "2b5b8dd90b2e6020ffccc2719d8bc16d9935421754a8c088d6b31dbca4e4ff7b"
+      "sha256": "a95d4ab06189460f3b3d13a33e421887b5f3ea09a10535ae0d4c92beb7ff631d"
     },
     "vmlinux": {
-      "sha256": ""
+      "sha256": "0c5e4da2e3745a6ae7d63787442dbd2c3b2239bce857f0451e9e87bbc6456b15"
     }
   },
 
   "patches": {
+    "_comment": ".bsp patches are applied to FILES using bspatch(1); .patch are applied to DIRECTORIES using patch(1)",
     "zlinux": [
+      "zImage-001-3622xsp-42218-ramdisk-and-header.bsp"
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
@@ -30,6 +32,11 @@
   },
 
   "synoinfo": {
+    "maxdisks": "25",
+    "internalportcfg": "0xffff",
+    "esataportcfg": "0x0",
+    "support_bde_internal_10g": "no",
+    "support_disk_compatibility": "no"
   },
 
   "grub": {
@@ -41,20 +48,21 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "DS2422+",
-      "SMBusHddDynamicPower": 1,
+      "syno_hw_version": "DS3622xs+",
+      "syno_hdd_powerup_seq": 0,
+      "HddHotplug": 0,
       "vender_format_version": 2,
       "console": "ttyS0,115200n8",
-      "synoboot2": null,
+      "withefi": null,
       "elevator": "elevator",
-      "syno_ttyS0": "serial,0x3f8",
-      "syno_ttyS1": "serial,0x2f8",
+      "syno_port_thaw": 1,
+      "syno_hdd_detect": 0,
       "root": "/dev/md0",
       "earlycon": "uart8250,io,0x3f8,115200n8"
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS2422+ v7.0.1-42218 (USB, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
@@ -68,19 +76,18 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS2422+ v7.0.1-42218 (SATA, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
-          "echo Starting kernel with SATA boot",
-          "echo WARNING: SATA boot support on this platform is experimental!"
+          "echo Starting kernel with SATA boot"
         ],
         "cmdline": {
           "earlyprintk": null,
           "loglevel": 15,
-          "synoboot_satadom": 2,
+          "synoboot_satadom": 1,
           "log_buf_len": "32M"
         }
       }
