@@ -1,27 +1,27 @@
 {
   "os": {
-    "id": "ds920p_42218",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS920%2B_42218.pat",
-    "sha256": "fe2a4648f76adeb65c3230632503ea36bbac64ee88b459eb9bfb5f3b8c8cebb3"
+    "id": "ds920p_42550",
+    "pat_url": "file://localhost/root/DSM_DS920%2B_42550.pat",
+    "sha256": "41d787bc518c24ba2a044fbe7888738c61a719762628af68ad4b81a870b24f82"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "346b68f662b50f47d3ee6c2bc9de6302e4b60436142c24ee88b620c7afd1ba06"
+      "sha256": "8f99916a0f5ee0c28fe415ff3aa6587efb1dbd25829c5e74de1b7cd1db8d0b54"
     },
     "ramdisk": {
       "name": "rd.gz",
-      "sha256": "f7dd1317f24ec6b9bac839e37f66b59030218c7f97c06f73f1f54ed0f892c4aa"
+      "sha256": "f220a687f37f16a942f53e7d99bbd30ea440d1ce7ad9dd1b77f85df0019a6c61"
     },
     "vmlinux": {
-      "sha256": "6494b4c4789ed887ddfaf0fe0e45e100cfcc4ec719b7f3ab6bcc26b05e97c829"
+      "sha256": "6a5a04759407fbcf728b25d4a66229dc37e1ddc3445b5886cefe5cb2b8157480"
     }
   },
 
   "patches": {
     "zlinux": [
-      "zImage-001-920p-42218-ramdisk-and-flag-NOP.bsp"
+      "zImage-001-920p-42550-ramdisk-and-flag-NOP.bsp"
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
@@ -31,6 +31,11 @@
   },
 
   "synoinfo": {
+    "rss_server": "http://example.com/autoupdate/genRSS.php",
+    "rss_server_ssl": "https://example.com/autoupdate/genRSS.php",
+    "small_info_path": "https://example.com/smallupdate",
+    "updateurl": "http://example.com/",
+    "myds_region_api_base_url": "https://example.com/"
   },
 
   "grub": {
@@ -56,12 +61,14 @@
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS920+ v7.0.1-42218 (USB, Verbose)": {
+      "RedPill DS920+ v7.1-42550 Beta (USB, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,2)",
+          "set root=(hd0,msdos1)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+          "linux /zImage @@@CMDLINE@@@",
+          "echo Loading initramfs...",
+          "initrd /rd.gz /custom.gz",
           "echo Starting kernel with USB boot"
         ],
         "cmdline": {
@@ -70,12 +77,14 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS920+ v7.0.1-42218 (SATA, Verbose)": {
+      "RedPill DS920+ v7.1-42550 Beta (SATA, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,2)",
+          "set root=(hd0,msdos1)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+          "linux /zImage @@@CMDLINE@@@",
+          "echo Loading initramfs...",
+          "initrd /rd.gz /custom.gz",
           "echo Starting kernel with SATA boot",
           "echo WARNING: SATA boot support on this platform is experimental!"
         ],
@@ -101,7 +110,6 @@
       "@@@COMMON@@@/EFI/boot/SynoBootLoader.efi": "EFI/BOOT/"
     },
     "bootp2_copy": {
-      "@@@COMMON@@@/bzImage": "bzImage",
       "@@@PAT@@@/GRUB_VER": "GRUB_VER",
       "@@@COMMON@@@/EFI": "EFI",
       "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
