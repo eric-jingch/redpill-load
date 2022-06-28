@@ -1,8 +1,8 @@
 {
   "os": {
-    "id": "ds1621p_42661",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42661-1/DSM_DS1621%2B_42661.pat",
-    "sha256": "381077302a89398a9fb5ec516217578d6f33b0219fe95135e80fd93cddbf88c4"
+    "id": "ds2422p_42661",
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42661-1/DSM_DS2422%2B_42661.pat",
+    "sha256": "c38fee0470c592b679ab52a64eac76b2a3912fb2e6aba65a65abb5aa05a98d4c"
   },
 
   "files": {
@@ -21,7 +21,7 @@
 
   "patches": {
     "zlinux": [
-      "zImage-001-1621p-42661-ramdisk-and-flag-NOP.bsp"
+      "zImage-001-2422p-42661-ramdisk-and-flag-NOP.bsp"
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
@@ -47,7 +47,7 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "DS1621+",
+      "syno_hw_version": "DS2422+",
       "SMBusHddDynamicPower": 1,
       "vender_format_version": 2,
       "console": "ttyS0,115200n8",
@@ -60,7 +60,7 @@
     },
 
     "menu_entries": {
-      "RedPill DS1621+ v7.1.0-42661 (USB, Verbose)": {
+      "RedPill DS2422+ v7.1.0-42661 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos1)",
@@ -76,7 +76,7 @@
           "log_buf_len": "32M"
         }
       },
-      "RedPill DS1621+ v7.1.0-42661 (SATA, Verbose)": {
+      "RedPill DS2422+ v7.1.0-42661 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos1)",
