@@ -1,6 +1,6 @@
 {
   "id": "jumkey.qjs.000",
-  "url": "https://github.com/PeterSuh-Q3/redpill-load/raw/develop/redpill-runtime-qjs/rpext-index.json",
+  "url": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-runtime-qjs/rpext-index.json",
   "info": {
     "name": "QuickJS Javascript Engine",
     "description": "QuickJS Javascript Engine",
