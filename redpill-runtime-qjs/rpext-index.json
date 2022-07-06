@@ -11,9 +11,10 @@
   "releases": {
     "ds918p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json",
     "ds920p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json",
+    "ds920p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json".
     "ds1621p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json",
     "ds2422p_42218": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json",
     "ds2422p_42661": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-runtime-qjs/recipes/universal.json",    
-    "ds920p_42661": "https://github.com/jumkey/redpill-load/raw/develop/redpill-runtime-qjs/recipes/universal.json"
+    "dva1622_42218": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-runtime-qjs/recipes/universal.json"
   }
 }
