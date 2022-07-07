@@ -1,6 +1,6 @@
 {
   "os": {
-    "id": "ds920p_42218",
+    "id": "dva1622_42218",
     "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS920%2B_42218.pat",
     "sha256": "fe2a4648f76adeb65c3230632503ea36bbac64ee88b459eb9bfb5f3b8c8cebb3"
   },
@@ -21,7 +21,7 @@
 
   "patches": {
     "zlinux": [
-      "zImage-001-920p-42218-ramdisk-and-flag-NOP.bsp"
+      "zImage-001-1622-42218-ramdisk-and-flag-NOP.bsp"
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
@@ -42,7 +42,7 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "DS920+",
+      "syno_hw_version": "DVA1622",
       "intel_iommu": "igfx_off",
       "HddEnableDynamicPower": 1,
       "vender_format_version": 2,
@@ -56,7 +56,7 @@
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS920+ v7.0.1-42218 (USB, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill DVA1622 v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
@@ -70,7 +70,7 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS920+ v7.0.1-42218 (SATA, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill DVA1622 v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
