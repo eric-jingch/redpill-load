@@ -31,11 +31,6 @@
   },
 
   "synoinfo": {
-    "rss_server": "http://example.com/autoupdate/genRSS.php",
-    "rss_server_ssl": "https://example.com/autoupdate/genRSS.php",
-    "small_info_path": "https://example.com/smallupdate",
-    "updateurl": "http://example.com/",
-    "myds_region_api_base_url": "https://example.com/"
   },
 
   "grub": {
@@ -47,7 +42,7 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "DS920+",
+      "syno_hw_version": "DS1520+",
       "intel_iommu": "igfx_off",
       "HddEnableDynamicPower": 1,
       "vender_format_version": 2,
@@ -64,11 +59,9 @@
       "Yet Another Jun`s Mod x RedPill DS1520+ v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos1)",
+          "set root=(hd0,2)",
           "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
+          "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with USB boot"
         ],
         "cmdline": {
@@ -79,12 +72,10 @@
       },
       "Yet Another Jun`s Mod x RedPill DS1520+ v7.0.1-42218 (SATA, Verbose)": {
         "options": [
-          "savedefault",
-          "set root=(hd0,msdos1)",
+         "savedefault",
+          "set root=(hd0,2)",
           "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
+          "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with SATA boot",
           "echo WARNING: SATA boot support on this platform is experimental!"
         ],
@@ -110,6 +101,7 @@
       "@@@COMMON@@@/EFI/boot/SynoBootLoader.efi": "EFI/BOOT/"
     },
     "bootp2_copy": {
+      "@@@COMMON@@@/bzImage": "bzImage",
       "@@@PAT@@@/GRUB_VER": "GRUB_VER",
       "@@@COMMON@@@/EFI": "EFI",
       "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
