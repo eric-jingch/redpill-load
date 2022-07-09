@@ -6,12 +6,11 @@ on:
       pat-address:
         description: 'Pat file URL'
         required: true
-        default: 'https://cndl.synology.cn/download/DSM/release/7.0.1/42218/DSM_DS3622xs+_42218.pat'
+        default: 'https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS1520%2B_42218.pat'
       toolchain:
         description: 'DSM toolchain URL for repack zImage'
         required: true
-        default: 'https://downloads.sourceforge.net/project/dsgpl/Tool%20Chain/DSM%207.0.0%20Tool%20Chains/Intel%20x86%20Linux%204.4.180%20%28Broadwellnk%29/broadwellnk-gcc750_glibc226_x86_64-GPL.txz'
-
+        default: 'https://sourceforge.net/projects/dsgpl/files/Tool%20Chain/DSM%207.0.0%20Tool%20Chains/Intel%20x86%20Linux%204.4.180%20%28Geminilake%29/geminilake-gcc750_glibc226_x86_64-GPL.txz'
       linux-src:
         description: 'Linux kernel source URL for repack zImage'
         required: true
