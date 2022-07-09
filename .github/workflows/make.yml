@@ -6,11 +6,11 @@ on:
       pat-address:
         description: 'Pat file URL'
         required: true
-        default: 'https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS918%2B_42218.pat'
+        default: 'https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS1520%2B_42218.pat'
       toolchain:
         description: 'DSM toolchain URL for repack zImage'
         required: true
-        default: 'https://sourceforge.net/projects/dsgpl/files/Tool%20Chain/DSM%207.0.0%20Tool%20Chains/Intel%20x86%20Linux%204.4.180%20%28Apollolake%29/apollolake-gcc750_glibc226_x86_64-GPL.txz'
+        default: 'https://sourceforge.net/projects/dsgpl/files/Tool%20Chain/DSM%207.0.0%20Tool%20Chains/Intel%20x86%20Linux%204.4.180%20%28Geminilake%29/geminilake-gcc750_glibc226_x86_64-GPL.txz'
       linux-src:
         description: 'Linux kernel source URL for repack zImage'
         required: true
@@ -91,7 +91,7 @@ jobs:
           cp arch/x86/boot/bzImage ../zImage_mod
           make clean
           see_below
-          # for DS3615xs
+          # for DS1520+
           #sed -i 's/   -std=gnu89$/   -std=gnu89 $(call cc-option,-fno-PIE)/' Makefile
           sed -i 's/ ld -/ ${CROSS_COMPILE}ld -/' ../recreate-zImage/rebuild_kernel.sh
           sed -i 's/(ld -/(${CROSS_COMPILE}ld -/' ../recreate-zImage/rebuild_kernel.sh
