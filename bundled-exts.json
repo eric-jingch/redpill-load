@@ -1,3 +1,4 @@
 {
-  "redpill-boot-wait": "https://raw.githubusercontent.com/PeterSuh-Q3/rp-ext/master/redpill-boot-wait/rpext-index.json"
+  "thethorgroup.virtio": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-virtio/rpext-index.json",
+  "thethorgroup.boot-wait": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-boot-wait/rpext-index.json"  
 }
