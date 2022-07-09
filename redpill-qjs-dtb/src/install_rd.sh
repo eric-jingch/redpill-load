@@ -6,7 +6,7 @@ chmod +x dtc
 cp dtc /usr/sbin/dtc
 
 # copy 16 ports dts file to /etc.defaults
-#echo $PLATFORM_ID
+echo $PLATFORM_ID
 if [ "${PLATFORM_ID}" = "ds920p_42218" ]; then
   echo "copy DS920+'s 16 ports ds920p_16ports.dts to /etc.defaults"
   ./dtc -I dts -O dtb -o model.dtb ds920p_16ports.dts
@@ -23,6 +23,7 @@ fi
 
 # copy file
 if [ ! -f model_${PLATFORM_ID}.dtb ]; then
+echo "dtb file not exists for this platform!!!"
   # Dynamic generation
   ./dtc -I dtb -O dts -o output.dts /etc.defaults/model.dtb
   qjs --std ./dts.js output.dts output.dts.out
