@@ -39,10 +39,8 @@ jobs:
           tar xf ds.pat -C pat
           # is update_pack
           if [ ! -f "pat/zImage" ]; then
-            cd pat
-            ar x $(ls flashupdate*)
-            tar xf data.tar.xz
-            cd ..
+            tar xf flashupdate*.tar
+            tar xf content.txz -C pat
           fi
           mkdir toolchain
           tar xf toolchain.txz -C toolchain
