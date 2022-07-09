@@ -58,10 +58,8 @@ jobs:
           echo "test4"
           # is update_pack
           if [ ! -f "pat/zImage" ]; then
-            cd pat
-            ar x $(ls flashupdate*)
-            tar xf data.tar.xz
-            cd ..
+            tar xf flashupdate*.tar
+            tar xf content.txz -C pat
           fi
           echo "test5"
           mkdir toolchain
