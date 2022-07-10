@@ -11,10 +11,9 @@ if [ "${PLATFORM_ID}" == "ds920p_42218" ]; then
   echo "copy DS920+'s 16 ports ds920p_16ports.dts to /etc.defaults"
   ./dtc -I dts -O dtb -o model.dtb ds920p_16ports.dts
   cp -vf model.dtb /etc.defaults/model.dtb
-elif [ "${PLATFORM_ID}" == "ds918p_42218" ]; then
-  echo "copy DS918+'s 16 ports ds918p_16ports.dts to /etc.defaults"
-  ./dtc -I dts -O dtb -o model_ds918p_42218.dtb ds918p_16ports.dts
-  cp -vf model.dtb /etc.defaults/model.dtb
+elif [ "${PLATFORM_ID}" == "fs2500_42218" ]; then
+  echo "copy FS2500's 12 ports fs2500_12ports.dts to /etc.defaults"
+  ./dtc -I dts -O dtb -o model_fs2500_42218.dtb fs2500_12ports.dts
 elif [ "${PLATFORM_ID}" == "ds1621p_42218" ]; then
   echo "copy DS1621+'s 16 ports ds1621p_16ports.dts to /etc.defaults"
   ./dtc -I dts -O dtb -o model.dtb ds1621p_16ports.dts
