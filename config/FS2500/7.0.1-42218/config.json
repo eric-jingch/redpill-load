@@ -1,7 +1,7 @@
 {
   "os": {
-    "id": "ds1621p_42218",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_DS1621%2B_42218.pat",
+    "id": "fs2500_42218",
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.0.1/42218/DSM_FS2500_42218.pat",
     "sha256": "19f56827ba8bf0397d42cd1d6f83c447f092c2c1bbb70d8a2ad3fbd427e866df"
   },
 
@@ -42,7 +42,7 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "DS1621+",
+      "syno_hw_version": "FS2500",
       "SMBusHddDynamicPower": 1,
       "vender_format_version": 2,
       "console": "ttyS0,115200n8",
@@ -55,7 +55,7 @@
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS1621+ v7.0.1-42218 (USB, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill FS2500 v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
@@ -69,7 +69,7 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS1621+ v7.0.1-42218 (SATA, Verbose)": {
+      "Yet Another Jun`s Mod x RedPill FS2500 v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,2)",
