@@ -10,8 +10,8 @@
     },
     {
       "name": "virtio-4.4.180p.tgz",
-      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-virtio/releases/v1.0.0/geminilake/virtio-4.4.180p.tgz",
-      "sha256": "4fb7d2b4a72f100c0c1d3aceeae769dbafd08fcccda6e13a9e02e15582f71ebd",
+      "url": "https://github.com/jumkey/redpill-load/raw/develop/redpill-virtio/releases/v1.0.0/v1000/virtio-4.4.180p.tgz",
+      "sha256": "a34ba4c9a859dd6e35c78690fa6fab513dd8bf841f72734a7d60b143f629c167",
       "packed": true
     }
   ],
