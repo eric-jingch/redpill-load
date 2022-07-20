@@ -34,8 +34,6 @@
         "maxdisks": "24",
 		"support_bde_internal_10g": "no",
 		"support_disk_compatibility": "no",
-		"supportraidgroup": "no",
-		"support_syno_hybrid_raid": "yes",
 		"internalportcfg": "0xfffff",
         "SasIdxMap": "0",
         "esataportcfg": "0x00",
@@ -58,7 +56,7 @@
     	    "SataPortMap": "1", 
             "DiskIdxMap": "0",
             "mac1": "",
-            "netif_num": 1,
+            "netif_num": 5,
 
             "syno_hw_version": "RS4021xs+",
             "syno_hdd_powerup_seq": 0,
