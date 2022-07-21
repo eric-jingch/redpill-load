@@ -1,7 +1,7 @@
 {
     "os": {
-        "id": "dva3221_42661",
-        "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42661-1/DSM_DVA3221_42661.pat",
+        "id": "dva3219_42661",
+        "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42661-1/DSM_DVA3219_42661.pat",
         "sha256": "ed3207db40b7bac4d96411378558193b7747ebe88f0fc9c26c59c0b5c688c359"
     },
 
@@ -61,7 +61,7 @@
             "mac1": "",
             "netif_num": 4,
 
-            "syno_hw_version": "DVA3221",
+            "syno_hw_version": "DVA3219",
             "syno_hdd_powerup_seq": 0,
             "HddHotplug": 0,
             "vender_format_version": 2,
@@ -74,10 +74,10 @@
             "earlycon": "uart8250,io,0x3f8,115200n8"
         },
         "menu_entries": {
-            "RedPill DVA3221 v7.1.0-42661 Beta (USB, Verbose)": {
+            "RedPill DVA3219 v7.1.0-42661 (USB, Verbose)": {
                 "options": [
                     "savedefault",
-                    "set root=(hd0,msdos1)",
+                    "set root=(hd0,msdos2)",
                     "echo Loading Linux...",
                     "linux /zImage @@@CMDLINE@@@",
                     "echo Loading initramfs...",
@@ -90,10 +90,10 @@
                     "log_buf_len": "32M"
                 }
             },
-            "RedPill DVA3221 v7.1.0-42661 Beta (SATA, Verbose)": {
+            "RedPill DVA3219 v7.1.0-42661 (SATA, Verbose)": {
                 "options": [
                     "savedefault",
-                    "set root=(hd0,msdos1)",
+                    "set root=(hd0,msdos2)",
                     "echo Loading Linux...",
                     "linux /zImage @@@CMDLINE@@@",
                     "echo Loading initramfs...",
