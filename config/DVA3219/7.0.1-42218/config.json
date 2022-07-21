@@ -1,7 +1,7 @@
 {
     "os": {
-        "id": "dva3221_42218",
-        "pat_url": "https://global.synology.com/download/DSM/release/7.0.1/42218/DSM_DVA3221_42218.pat",
+        "id": "dva3219_42218",
+        "pat_url": "https://global.synology.com/download/DSM/release/7.0.1/42218/DSM_DVA3219_42218.pat",
         "sha256": "01f101d7b310c857e54b0177068fb7250ff722dc9fa2472b1a48607ba40897ee"
     },
 
@@ -22,7 +22,7 @@
     "patches": {
         "_comment": ".bsp patches are applied to FILES using bspatch(1); .patch are applied to DIRECTORIES using patch(1)",
         "zlinux": [
-            "zImage-001-dav3221-42218-ramdisk-and-header.bsp"
+            "zImage-001-dav3219-42218-ramdisk-and-header.bsp"
         ],
         "ramdisk": [
             "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
@@ -61,7 +61,7 @@
             "mac1": "",
             "netif_num": 4,
 
-            "syno_hw_version": "DVA3221",
+            "syno_hw_version": "DVA3219",
             "syno_hdd_powerup_seq": 0,
             "HddHotplug": 0,
             "vender_format_version": 2,
@@ -74,10 +74,10 @@
             "earlycon": "uart8250,io,0x3f8,115200n8"
         },
         "menu_entries": {
-            "RedPill DVA3221 v7.0.1-42218 Beta (USB, Verbose)": {
+            "RedPill DVA3219 v7.0.1-42218 (USB, Verbose)": {
                 "options": [
                     "savedefault",
-                    "set root=(hd0,msdos1)",
+                    "set root=(hd0,msdos2)",
                     "echo Loading Linux...",
                     "linux /zImage @@@CMDLINE@@@",
                     "echo Loading initramfs...",
@@ -90,10 +90,10 @@
                     "log_buf_len": "32M"
                 }
             },
-            "RedPill DVA3221 v7.0.1-42218 Beta (SATA, Verbose)": {
+            "RedPill DVA3219 v7.0.1-42218 (SATA, Verbose)": {
                 "options": [
                     "savedefault",
-                    "set root=(hd0,msdos1)",
+                    "set root=(hd0,msdos2)",
                     "echo Loading Linux...",
                     "linux /zImage @@@CMDLINE@@@",
                     "echo Loading initramfs...",
