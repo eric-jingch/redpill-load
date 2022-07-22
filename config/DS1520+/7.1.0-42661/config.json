@@ -43,7 +43,7 @@
     "small_info_path": "https://example.com/null",
     "updateurl": "http://example.com/",
     "myds_region_api_base_url": "https://example.com"
-  },  
+  },
 
   "grub": {
     "template": "@@@COMMON@@@/grub-template.conf",
@@ -55,7 +55,8 @@
       "netif_num": 1,
 
       "syno_hw_version": "DS1520+",
-      "SMBusHddDynamicPower": 1,
+      "intel_iommu": "igfx_off",
+      "HddEnableDynamicPower": 1,
       "vender_format_version": 2,
       "console": "ttyS0,115200n8",
       "synoboot2": null,
@@ -64,6 +65,7 @@
       "syno_ttyS1": "serial,0x2f8",
       "root": "/dev/md0",
       "earlycon": "uart8250,io,0x3f8,115200n8"
+
     },
 
     "menu_entries": {
@@ -124,4 +126,3 @@
     }
   }
 }
-
