@@ -95,8 +95,7 @@
                     "linux /zImage @@@CMDLINE@@@",
                     "echo Loading initramfs...",
                     "initrd /rd.gz /custom.gz",
-                    "echo Starting kernel with SATA boot",
-		    "ifconfig eth0 | head -2"
+                    "echo Starting kernel with SATA boot"
                 ],
                 "cmdline": {
                     "earlyprintk": null,
