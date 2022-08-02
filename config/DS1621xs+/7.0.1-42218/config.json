@@ -90,6 +90,37 @@
           "synoboot_satadom": 2,
           "log_buf_len": "32M"
         }
+      },
+      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (USB, Verbose, Re-install DSM)": {
+        "options": [
+          "savedefault",
+          "set root=(hd0,msdos2)",
+          "echo Loading Linux...",
+          "linux /bzImage @@@CMDLINE@@@",
+          "echo Starting kernel with USB boot"
+        ],
+        "cmdline": {
+          "earlyprintk": null,
+          "loglevel": 15,
+          "log_buf_len": "32M",
+          "force_junior": null
+        }
+      },
+      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (SATA, Verbose, Re-install DSM)": {
+        "options": [
+          "savedefault",
+          "set root=(hd0,msdos2)",
+          "echo Loading Linux...",
+          "linux /bzImage @@@CMDLINE@@@",
+          "echo Starting kernel with SATA boot"
+        ],
+        "cmdline": {
+          "earlyprintk": null,
+          "loglevel": 15,
+          "synoboot_satadom": 2,
+          "log_buf_len": "32M",
+          "force_junior": null          
+        }
       }
     }
   },
