@@ -62,7 +62,7 @@
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (USB, Verbose)": {
+      "Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
@@ -76,7 +76,7 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (SATA, Verbose)": {
+      "Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
@@ -91,7 +91,7 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (USB, Verbose, Re-install DSM)": {
+      "Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (USB, Verbose, Re-install DSM)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
@@ -106,7 +106,7 @@
           "force_junior": null
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (SATA, Verbose, Re-install DSM)": {
+      "Jun`s Mod x RedPill DS1621xs+ v7.0.1-42218 (SATA, Verbose, Re-install DSM)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
