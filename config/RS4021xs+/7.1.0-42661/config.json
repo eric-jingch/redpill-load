@@ -1,7 +1,7 @@
 {
     "os": {
         "id": "rs4021xsp_42661",
-        "pat_url": "https://global.synology.com/download/DSM/release/7.1/42661-1/DSM_RS4021xs%2B_42661.pat",
+        "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42661-1/DSM_RS4021xs%2B_42661.pat",
         "sha256": "496b64e431dafa34cdebb92da8ac736bf1610fe157f03df7e6d11152d60991f5"
     },
 
