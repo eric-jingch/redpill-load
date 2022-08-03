@@ -62,7 +62,7 @@
     },
 
     "menu_entries": {
-      "Yet Another Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (USB, Verbose)": {
+      "Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
@@ -76,7 +76,7 @@
           "log_buf_len": "32M"
         }
       },
-      "Yet Another Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (SATA, Verbose)": {
+      "Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos2)",
@@ -89,6 +89,37 @@
           "loglevel": 15,
           "synoboot_satadom": 1,
           "log_buf_len": "32M"
+        }
+      },
+      "Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (USB, Verbose, Re-Install DSM)": {
+        "options": [
+          "savedefault",
+          "set root=(hd0,msdos2)",
+          "echo Loading Linux...",
+          "linux /bzImage @@@CMDLINE@@@",
+          "echo Starting kernel with USB boot"
+        ],
+        "cmdline": {
+          "earlyprintk": null,
+          "loglevel": 15,
+          "log_buf_len": "32M",
+          "force_junior": null
+        }
+      },
+      "Jun`s Mod x RedPill DS3622xs+ v7.0.1-42218 (SATA, Verbose, Re-Install DSM)": {
+        "options": [
+          "savedefault",
+          "set root=(hd0,msdos2)",
+          "echo Loading Linux...",
+          "linux /bzImage @@@CMDLINE@@@",
+          "echo Starting kernel with SATA boot"
+        ],
+        "cmdline": {
+          "earlyprintk": null,
+          "loglevel": 15,
+          "synoboot_satadom": 1,
+          "log_buf_len": "32M",
+          "force_junior": null
         }
       }
     }
