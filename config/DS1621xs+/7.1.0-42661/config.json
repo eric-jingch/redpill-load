@@ -56,7 +56,7 @@
     	    "SataPortMap": "1", 
             "DiskIdxMap": "0",
             "mac1": "",
-            "netif_num": 5,
+            "netif_num": 1,
 
             "syno_hw_version": "DS1621xs+",
             "syno_hdd_powerup_seq": 0,
@@ -100,7 +100,7 @@
                 "cmdline": {
                     "earlyprintk": null,
                     "loglevel": 15,
-                    "synoboot_satadom": 2,
+                    "synoboot_satadom": 1,
                     "log_buf_len": "32M"
                 }
             },
