@@ -98,7 +98,7 @@
           "earlyprintk": null,
           "loglevel": 15,
           "log_buf_len": "32M",
-          "force_junior" : null
+          "force_junior": null
         }
       },
       "Jun`s Mod x RedPill DS1520+ v7.0.1-42218 (SATA, Verbose, Re-Install DSM)": {
@@ -115,7 +115,7 @@
           "loglevel": 15,
           "synoboot_satadom": 2,
           "log_buf_len": "32M",
-          "force_junior" : null
+          "force_junior": null
         }
       }
     }
