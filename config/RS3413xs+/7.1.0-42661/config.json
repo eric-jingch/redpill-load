@@ -140,13 +140,10 @@
       "@@@COMMON@@@/iosched-trampoline.sh": "usr/sbin/modprobe"
     },
     "bootp1_copy": {
-      "@@@PAT@@@/GRUB_VER": "GRUB_VER",
-      "@@@COMMON@@@/EFI/boot/SynoBootLoader.conf": "EFI/BOOT/",
-      "@@@COMMON@@@/EFI/boot/SynoBootLoader.efi": "EFI/BOOT/"
+      "@@@PAT@@@/GRUB_VER": "GRUB_VER"
     },
     "bootp2_copy": {
       "@@@PAT@@@/GRUB_VER": "GRUB_VER",
-      "@@@COMMON@@@/EFI": "EFI",
       "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
       "@@@PAT@@@/rd.gz": "rd.gz",
       "@@@PAT@@@/zImage": "zImage"
