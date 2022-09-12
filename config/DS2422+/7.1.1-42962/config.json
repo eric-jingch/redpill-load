@@ -59,22 +59,6 @@
     },
 
     "menu_entries": {
-      "RedPill DS2422+ v7.1.1-42962 Jun mod (USB, Verbose)": {
-        "options": [
-          "savedefault",
-          "set root=(hd0,2)",
-          "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rootfs.lzma",
-          "echo Starting kernel with USB boot"
-        ],
-        "cmdline": {
-          "earlyprintk": null,
-          "loglevel": 15,
-          "log_buf_len": "32M"
-        }
-      },
       "RedPill DS2422+ v7.1.1-42962 (USB, Verbose)": {
         "options": [
           "savedefault",
