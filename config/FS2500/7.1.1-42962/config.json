@@ -8,7 +8,7 @@
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "d939b5937be00a644aae64c33633619a7c310433e60a515c77bbef00b0a7e6b6"
+      "sha256": "b0f296aad0cc3b8adba13483f89770d0a4daf9b9cab335910717448b1eaa8254"
     },
     "ramdisk": {
       "name": "rd.gz",
