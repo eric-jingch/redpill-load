@@ -74,7 +74,7 @@
             "earlycon": "uart8250,io,0x3f8,115200n8"
         },
         "menu_entries": {
-            "RedPill DVA3221 v7.1.1-42962 Beta (USB, Verbose)": {
+            "RedPill DVA3221 v7.1.1-42962 (USB, Verbose)": {
                 "options": [
                     "savedefault",
                     "set root=(hd0,msdos1)",
@@ -90,7 +90,7 @@
                     "log_buf_len": "32M"
                 }
             },
-            "RedPill DVA3221 v7.1.1-42962 Beta (SATA, Verbose)": {
+            "RedPill DVA3221 v7.1.1-42962 (SATA, Verbose)": {
                 "options": [
                     "savedefault",
                     "set root=(hd0,msdos1)",
@@ -106,7 +106,42 @@
                     "synoboot_satadom": 2,
                     "log_buf_len": "32M"
                 }
-            }
+            },
+	    "RedPill DVA3221 v7.1.1-42962 (USB, Verbose, Re-Install DSM)": {
+                "options": [
+                    "savedefault",
+                    "set root=(hd0,msdos1)",
+                    "echo Loading Linux...",
+                    "linux /zImage @@@CMDLINE@@@",
+                    "echo Loading initramfs...",
+                    "initrd /rd.gz /custom.gz",
+                    "echo Starting kernel with USB boot"
+                ],
+                "cmdline": {
+                    "earlyprintk": null,
+                    "loglevel": 15,
+                    "log_buf_len": "32M",
+          	    "force_junior": null
+                }
+            },
+            "RedPill DVA3221 v7.1.1-42962 (SATA, Verbose, Re-Install DSM)": {
+                "options": [
+                    "savedefault",
+                    "set root=(hd0,msdos1)",
+                    "echo Loading Linux...",
+                    "linux /zImage @@@CMDLINE@@@",
+                    "echo Loading initramfs...",
+                    "initrd /rd.gz /custom.gz",
+                    "echo Starting kernel with SATA boot"
+                ],
+                "cmdline": {
+                    "earlyprintk": null,
+                    "loglevel": 15,
+                    "synoboot_satadom": 2,
+                    "log_buf_len": "32M",
+          	    "force_junior": null
+                }
+            }	
         }
     },
     "extra": {
