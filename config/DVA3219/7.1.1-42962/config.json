@@ -1,7 +1,7 @@
 {
     "os": {
         "id": "dva3219_42962",
-        "pat_url": "https://global.download.synology.com/download/DSM/release/7.1/42962-1/DSM_DVA3219_42962.pat",
+        "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_DVA3219_42962.pat",
         "sha256": "f03395fd9db108d2c5a684b6ba9b4fadc6b1ab05c4e227d401572c01ec4b3dca"
     },
 
