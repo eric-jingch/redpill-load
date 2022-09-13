@@ -55,7 +55,7 @@
       "mac1": "",
       "netif_num": 1,
 
-      "syno_hw_version": "ds1520p",
+      "syno_hw_version": "DS1520+",
       "intel_iommu": "igfx_off",
       "HddEnableDynamicPower": 1,
       "vender_format_version": 2,
