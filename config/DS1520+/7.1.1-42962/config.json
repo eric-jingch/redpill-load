@@ -70,7 +70,7 @@
     },
 
     "menu_entries": {
-      "RedPill ds1520p v7.1.1-42962 (USB, Verbose)": {
+      "RedPill DS1520+ v7.1.1-42962 (USB, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos1)",
@@ -86,7 +86,7 @@
           "log_buf_len": "32M"
         }
       },
-      "RedPill ds1520p v7.1.1-42962 (SATA, Verbose)": {
+      "RedPill DS1520+ v7.1.1-42962 (SATA, Verbose)": {
         "options": [
           "savedefault",
           "set root=(hd0,msdos1)",
