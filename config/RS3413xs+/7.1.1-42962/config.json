@@ -1,8 +1,8 @@
 {
   "os": {
     "id": "rs3413xsp_42962",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_rs3413xsp_42962.pat",
-    "sha256": "b79c129354c203b7340010573d16b2d6ebc6a676c946579a959c891a70b8bcfc"
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_RS3413xs%2B_42962.pat",
+    "sha256": "de2425d55667a1c67763aeea1155bc6e336fb419148bb70f1ae1243d914d34ff"
   },
 
   "files": {
