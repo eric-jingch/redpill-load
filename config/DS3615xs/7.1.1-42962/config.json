@@ -26,8 +26,8 @@
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
-      "@@@COMMON@@@/v7.0.1/ramdisk-002-init-script.patch",
-      "@@@COMMON@@@/v7.0.1/ramdisk-003-post-init-script.patch",
+      "@@@COMMON@@@/v7.1.1/ramdisk-002-init-script.patch",
+      "@@@COMMON@@@/v7.1.1/ramdisk-003-post-init-script-noatime.patch",
       "@@@COMMON@@@/ramdisk-004-network-hosts.patch",
       "@@@COMMON@@@/ramdisk-005-disable-disabled-ports.patch"
     ]
@@ -36,12 +36,7 @@
     "maxdisks": "15",
     "internalportcfg": "0x78FF",
     "esataportcfg": "0x0",
-    "usbportcfg": "0x8700",
-    "rss_server": "http://example.com/null.xml",
-    "rss_server_ssl": "https://example.com/null.xml",
-    "small_info_path": "https://example.com/null",
-    "updateurl": "http://example.com/",
-    "myds_region_api_base_url": "https://example.com"
+    "usbportcfg": "0x8700"
   },
   "grub": {
     "template": "@@@COMMON@@@/grub-template.conf",
@@ -96,41 +91,6 @@
           "loglevel": 15,
           "synoboot_satadom": 1,
           "log_buf_len": "32M"
-        }
-      },
-      "RedPill DS3615xs v7.1.1-42962 (USB, Verbose, Re-Install DSM)": {
-        "options": [
-          "savedefault",
-          "set root=(hd0,msdos1)",
-          "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
-          "echo Starting kernel with USB boot"
-        ],
-        "cmdline": {
-          "earlyprintk": null,
-          "loglevel": 15,
-          "log_buf_len": "32M",
-          "force_junior": null
-        }
-      },
-      "RedPill DS3615xs v7.1.1-42962 (SATA, Verbose, Re-Install DSM)": {
-        "options": [
-          "savedefault",
-          "set root=(hd0,msdos1)",
-          "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
-          "echo Starting kernel with SATA boot"
-        ],
-        "cmdline": {
-          "earlyprintk": null,
-          "loglevel": 15,
-          "synoboot_satadom": 1,
-          "log_buf_len": "32M",
-          "force_junior": null
         }
       }
     }
