@@ -31,11 +31,6 @@
   },
 
   "synoinfo": {
-    "rss_server": "http://example.com/autoupdate/genRSS.php",
-    "rss_server_ssl": "https://example.com/autoupdate/genRSS.php",
-    "small_info_path": "https://example.com/smallupdate",
-    "updateurl": "http://example.com/",
-    "myds_region_api_base_url": "https://example.com/"
   },
 
   "grub": {
