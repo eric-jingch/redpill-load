@@ -25,8 +25,8 @@
     ],
     "ramdisk": [
       "@@@COMMON@@@/ramdisk-001-disable-root-pwd.patch",
-      "@@@COMMON@@@/v7.0.1/ramdisk-002-init-script.patch",
-      "@@@COMMON@@@/v7.0.1/ramdisk-003-post-init-script.patch",
+      "@@@COMMON@@@/v7.1.1/ramdisk-002-init-script.patch",
+      "@@@COMMON@@@/v7.1.1/ramdisk-003-post-init-script-noatime.patch",
       "@@@COMMON@@@/ramdisk-004-network-hosts.patch"
     ]
   },
@@ -93,42 +93,6 @@
           "loglevel": 15,
           "synoboot_satadom": 2,
           "log_buf_len": "32M"
-        }
-      },
-      "RedPill DS1621+ v7.1.1-42962 (USB, Verbose, Re-Install DSM)": {
-        "options": [
-          "savedefault",
-          "set root=(hd0,msdos1)",
-          "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
-          "echo Starting kernel with USB boot"
-        ],
-        "cmdline": {
-          "earlyprintk": null,
-          "loglevel": 15,
-          "log_buf_len": "32M",
-          "force_junior": null
-        }
-      },
-      "RedPill DS1621+ v7.1.1-42962 (SATA, Verbose, Re-Install DSM)": {
-        "options": [
-          "savedefault",
-          "set root=(hd0,msdos1)",
-          "echo Loading Linux...",
-          "linux /zImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",
-          "echo Starting kernel with SATA boot",
-          "echo WARNING: SATA boot support on this platform is experimental!"
-        ],
-        "cmdline": {
-          "earlyprintk": null,
-          "loglevel": 15,
-          "synoboot_satadom": 2,
-          "log_buf_len": "32M",
-          "force_junior": null
         }
       }
     }
