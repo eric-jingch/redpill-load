@@ -39,7 +39,12 @@
 		"support_syno_hybrid_raid": "yes",
 		"internalportcfg": "0xfffff",
         "SasIdxMap": "0",
-        "esataportcfg": "0x00"
+        "esataportcfg": "0x00",
+  "rss_server": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.xml",
+  "rss_server_ssl": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.xml",
+  "rss_server_v2": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.json",
+  "small_info_path": "https://example.com/null",
+  "security_version_server": "https://example.com/smallupdate"
     },
     "grub": {
         "template": "@@@COMMON@@@/grub-template.conf",
