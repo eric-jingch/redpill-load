@@ -37,7 +37,12 @@
     "internalportcfg": "0xffff",
     "esataportcfg": "0x0",
     "support_bde_internal_10g": "no",
-    "support_disk_compatibility": "no"    
+    "support_disk_compatibility": "no",
+  "rss_server": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.xml",
+  "rss_server_ssl": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.xml",
+  "rss_server_v2": "https://raw.githubusercontent.com/pocopico/redpill-load/develop/rss.json",
+  "small_info_path": "https://example.com/null",
+  "security_version_server": "https://example.com/smallupdate"    
   },
 
   "grub": {
