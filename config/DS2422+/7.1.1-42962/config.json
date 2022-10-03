@@ -72,6 +72,7 @@
         ],
         "cmdline": {
           "earlyprintk": null,
+          "withefi": null,
           "loglevel": 15,
           "log_buf_len": "32M"
         }
@@ -89,6 +90,7 @@
         ],
         "cmdline": {
           "earlyprintk": null,
+          "withefi": null,
           "loglevel": 15,
           "synoboot_satadom": 2,
           "log_buf_len": "32M"
