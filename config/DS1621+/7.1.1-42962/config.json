@@ -74,6 +74,7 @@
         "cmdline": {
           "earlyprintk": null,
           "loglevel": 15,
+     	    "withefi": null,          
           "log_buf_len": "32M"
         }
       },
