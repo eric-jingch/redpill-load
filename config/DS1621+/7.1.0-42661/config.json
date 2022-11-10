@@ -63,7 +63,7 @@
       "RedPill DS1621+ v7.1.0-42661 (USB, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos1)",
+          "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /zImage @@@CMDLINE@@@",
           "echo Loading initramfs...",
@@ -79,7 +79,7 @@
       "RedPill DS1621+ v7.1.0-42661 (SATA, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos1)",
+          "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /zImage @@@CMDLINE@@@",
           "echo Loading initramfs...",
@@ -97,7 +97,7 @@
       "RedPill DS1621+ v7.1.0-42661 (USB, Verbose, Re-Install DSM)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos1)",
+          "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /zImage @@@CMDLINE@@@",
           "echo Loading initramfs...",
@@ -114,7 +114,7 @@
       "RedPill DS1621+ v7.1.0-42661 (SATA, Verbose, Re-Install DSM)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos1)",
+          "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /zImage @@@CMDLINE@@@",
           "echo Loading initramfs...",
