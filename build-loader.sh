@@ -472,7 +472,7 @@ fi
 pr_dbg "Copying patched files"
 brp_cp_flat "${BRP_ZLINUX_PATCHED_FILE}" "${BRP_OUT_P1}/${BRP_ZLINMOD_NAME}"
 brp_cp_flat "${BRP_RD_REPACK}" "${BRP_OUT_P1}/${BRP_RDMOD_NAME}"
-brp_cp_flat "${BRP_CUSTOM_RD_PATH}" "${BRP_OUT_P1}/${BRP_CUSTOM_RD_NAME}"
+brp_cp_flat "${BRP_CUSTOM_RD_PATH}" "${BRP_OUT_P2}/${BRP_CUSTOM_RD_NAME}"
 brp_cp_flat "${BRP_TMP_GRUB_CONF}" "${BRP_OUT_P1}/boot/grub/grub.cfg"
 pr_process_ok
 
