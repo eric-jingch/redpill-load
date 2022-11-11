@@ -66,7 +66,7 @@
       "Jun`s Mod x RedPill DS1019+ v7.0.1-42218 (USB, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos2)",
+          "set root=(hd0,msdos3)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with USB boot"
@@ -80,7 +80,7 @@
       "Jun`s Mod x RedPill DS1019+ v7.0.1-42218 (SATA, Verbose)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos2)",
+          "set root=(hd0,msdos3)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with SATA boot",
@@ -96,7 +96,7 @@
       "Jun`s Mod x RedPill DS1019+ v7.0.1-42218 (USB, Verbose, Re-Install DSM)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos2)",
+          "set root=(hd0,msdos3)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with USB boot"
@@ -111,7 +111,7 @@
       "Jun`s Mod x RedPill DS1019+ v7.0.1-42218 (SATA, Verbose, Re-Install DSM)": {
         "options": [
           "savedefault",
-          "set root=(hd0,msdos2)",
+          "set root=(hd0,msdos3)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
           "echo Starting kernel with SATA boot",
