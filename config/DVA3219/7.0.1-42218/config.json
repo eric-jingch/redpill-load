@@ -62,8 +62,6 @@
           "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",            
           "echo Starting kernel with USB boot",
           "echo Thanks jumkey hard work"
         ],
@@ -79,8 +77,6 @@
           "set root=(hd0,msdos2)",
           "echo Loading Linux...",
           "linux /bzImage @@@CMDLINE@@@",
-          "echo Loading initramfs...",
-          "initrd /rd.gz /custom.gz",            
           "echo Starting kernel with SATA boot",
           "echo WARNING: SATA boot support on this platform is experimental!"
         ],
