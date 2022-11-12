@@ -61,7 +61,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with USB boot",
           "echo Thanks jumkey hard work"
         ],
@@ -76,7 +76,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with SATA boot",
           "echo WARNING: SATA boot support on this platform is experimental!"
         ],
@@ -92,7 +92,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with USB boot",
           "echo Thanks jumkey hard work"
         ],
@@ -108,7 +108,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with SATA boot",
           "echo WARNING: SATA boot support on this platform is experimental!"
         ],
@@ -136,7 +136,7 @@
     "bootp2_copy": {
       "@@@PAT@@@/GRUB_VER": "GRUB_VER",
       "@@@COMMON@@@/EFI": "EFI",
-      "@@@COMMON@@@/bzImage": "bzImage",
+ 
       "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
       "@@@PAT@@@/rd.gz": "rd.gz",
       "@@@PAT@@@/zImage": "zImage"

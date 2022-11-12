@@ -67,7 +67,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with USB boot"
         ],
         "cmdline": {
@@ -81,7 +81,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with SATA boot"
         ],
         "cmdline": {
@@ -96,7 +96,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with USB boot"
         ],
         "cmdline": {
@@ -111,7 +111,7 @@
           "savedefault",
           "set root=(hd0,msdos3)",
           "echo Loading Linux...",
-          "linux /bzImage @@@CMDLINE@@@",
+"linux /zImage @@@CMDLINE@@@","echo Loading initramfs...","initrd /rd.gz /custom.gz",
           "echo Starting kernel with SATA boot"
         ],
         "cmdline": {
@@ -137,7 +137,7 @@
       "@@@COMMON@@@/EFI/boot/SynoBootLoader.efi": "EFI/BOOT/"
     },
     "bootp2_copy": {
-      "@@@COMMON@@@/bzImage": "bzImage",
+ 
       "@@@PAT@@@/GRUB_VER": "GRUB_VER",
       "@@@COMMON@@@/EFI": "EFI",
       "@@@PAT@@@/grub_cksum.syno": "grub_cksum.syno",
