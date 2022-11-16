@@ -98,7 +98,7 @@
                     "earlyprintk": null,
 			"withefi": null,
                     "loglevel": 15,
-"synoboot_satadom": 3,
+"synoboot_satadom": 1,
                     "log_buf_len": "32M"
                 }
             }	
