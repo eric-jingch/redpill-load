@@ -1,6 +1,5 @@
 {
   "thethorgroup.virtio": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-virtio/rpext-index.json",
   "thethorgroup.boot-wait": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-boot-wait/rpext-index.json",
-  "all-modules": "https://raw.githubusercontent.com/PeterSuh-Q3/rp-ext/master/all-modules/rpext-index.json",
-  "ztcrp-diag": "https://raw.githubusercontent.com/PeterSuh-Q3/rp-ext/master/tcrp-diag/rpext-index.json"
+  "all-modules": "https://raw.githubusercontent.com/PeterSuh-Q3/rp-ext/master/all-modules/rpext-index.json"
 }
