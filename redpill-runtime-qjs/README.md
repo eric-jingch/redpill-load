@@ -1,1 +1,0 @@
-QuickJS Javascript Engine
