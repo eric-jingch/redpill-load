@@ -8,7 +8,8 @@ SED_PATH='/tmpRoot/usr/bin/sed'
 
 fixcpufreq() {
   mount -t sysfs sysfs /sys
-  modprobe acpi-cpufreq
+  insmod /tmpRoot/usr/lib/modules/processor.ko
+  insmod /tmpRoot/usr/lib/modules/acpi-cpufreq.ko
   # CPU performance scaling
   if [ -f /tmpRoot/usr/lib/modules-load.d/70-cpufreq-kernel.conf ]; then
     cpufreq=$(ls -ltr /sys/devices/system/cpu/cpufreq/* 2>/dev/null | wc -l)
