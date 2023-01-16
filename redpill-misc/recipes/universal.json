@@ -1,12 +1,6 @@
 {
   "files": [
     {
-      "name": "install.sh",
-      "url": "https://github.com/pocopico/redpill-load/raw/develop/redpill-misc/releases/install.sh",
-      "sha256": "3dbbe946c0386aa47a0f8e1d9731b5b32807ca26ead8a411a9303b80a4842c2a",
-      "packed": false
-    },
-    {
       "name": "install-all.sh",
       "url": "https://github.com/PeterSuh-Q3/redpill-load/raw/master/redpill-misc/releases/install-all.sh",
       "sha256": "7c63a658715977f42754e08c5c9423585dd55d59209620cf265aa85ed168cef2",
