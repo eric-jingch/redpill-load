@@ -1,14 +1,14 @@
 {
   "os": {
     "id": "ds3615xs_42962",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_DS3615xs_42962.pat",
-    "sha256": "b79c129354c203b7340010573d16b2d6ebc6a676c946579a959c891a70b8bcfc"
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962-1/DSM_DS3615xs_42962.pat",
+    "sha256": "f01a17d73e2594b0b31f134bfe023dccc0bb9389a462f9918080573134093023"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "b7d2ca699195a1990f838690be32a65158d4ed01e8126af2ddb27a0f08e177ca"
+      "sha256": "3c8d6692eec9f8dcbf3224e73f3442244d53112f5522c3dfb2af280714a7a84c"
     },
     "ramdisk": {
       "name": "rd.gz",
