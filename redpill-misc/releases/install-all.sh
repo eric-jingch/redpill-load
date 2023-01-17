@@ -35,9 +35,7 @@ fixcrypto() {
         ${SED_PATH} -i 's/^crc32c-intel/# crc32c-intel/g' /tmpRoot/usr/lib/modules-load.d/70-crypto-kernel.conf
     fi
   fi
-}
 
-fixcryptoaes() {
   # aesni-intel
   if [ -f /tmpRoot/usr/lib/modules-load.d/70-crypto-kernel.conf ]; then
     CPUFLAGS=`cat /proc/cpuinfo | grep flags | grep aes | wc -l`
@@ -70,49 +68,40 @@ case "${PLATFORM}" in
 bromolow)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 apollolake)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 broadwell)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 broadwellnk)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 v1000)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 r1000)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 denverton)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     fixnvidia
     ;;
 geminilake)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 
 *)
     fixcpufreq
     fixcrypto
-    fixcryptoaes
     ;;
 
 esac
