@@ -1,18 +1,18 @@
 {
   "os": {
     "id": "ds2422p_42962",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962-1/DSM_DS2422%2B_42962.pat",
-    "sha256": "69f02c4636ff2593e5feb393e13ed82791fa6457d61874368a0b6f93ee11f164"
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_DS2422%2B_42962.pat",
+    "sha256": "a887cc3f06e2b51d34f682a1a812637486aeefbef57c309414f69c3e5514edef"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "4f45500024580e03afca1911cf543c48d17cd42944c0c94a8fb686f1384881fe"
+      "sha256": "b0f296aad0cc3b8adba13483f89770d0a4daf9b9cab335910717448b1eaa8254"
     },
     "ramdisk": {
       "name": "rd.gz",
-      "sha256": "df84a8fb2c2ed875d1710e814ee771237048b89fcc410761e8207a85d4f63ec3"
+      "sha256": "edcf0e07e2773326d7f6c2f17a0c2d18e8ef4600a720bbdd4965fc1f11eb21e9"
     },
     "vmlinux": {
       "sha256": "035417ad0351ec17d8cf22eea40a1fd38d74fb62e9f18562048ff0d91b6f124f  "
@@ -119,4 +119,3 @@
     }
   }
 }
-
