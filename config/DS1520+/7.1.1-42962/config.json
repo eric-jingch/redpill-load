@@ -1,14 +1,14 @@
 {
   "os": {
     "id": "ds1520p_42962",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_ds1520p_42962.pat",
-    "sha256": "f19d2ac39fae564797c148929b8fe7c9740ac3a74099bf573b68df8fe0228cb3"
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962-1/DSM_ds1520p_42962.pat",
+    "sha256": "edcacbab10b77e2a6862d31173f5369c6e3c1720b8f0ec4fd41786609017c39b"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "89ee173272101e6714728e73930d8b31a414f9f1eca8ab78f45c12fc721138ab"
+      "sha256": "2de065851b8d3a222db1feea696aab12ded7b582876b22ff6e847cd6f2e62ecf"
     },
     "ramdisk": {
       "name": "rd.gz",
