@@ -1,14 +1,14 @@
 {
   "os": {
     "id": "ds1019p_42962",
-    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962/DSM_DS1019%2B_42962.pat",
-    "sha256": "91bb367f501a3d86988211b7e35f68809a8f967e6e4e54ff31ed89bd50a66cc9"
+    "pat_url": "https://global.download.synology.com/download/DSM/release/7.1.1/42962-1/DSM_DS1019%2B_42962.pat",
+    "sha256": "af2268388df9434679205ffd782ae5c17cd81d733cdcd94b13fc894748ffe321"
   },
 
   "files": {
     "zlinux": {
       "name": "zImage",
-      "sha256": "12afcd27e15ba5e4596e1af7275d9462d31c7d8afb32aa723f7b8b7cfa5a19a2"
+      "sha256": "f372b5faaca87d852579df25fe1e9471fd346448ead932586ffd069e2dc4fb13"
     },
     "ramdisk": {
       "name": "rd.gz",
